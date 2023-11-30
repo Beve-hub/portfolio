@@ -34,20 +34,20 @@ const About = () => {
         Design and illustration (Photoshop). if you' re not here for that, you'll
          probably find me building projects and having fun on Twitter, or networking 
          badly on LinkedIn</p></div>
-         <div className='md:grid gap-6 items-center justify-center mx-auto mb-6'>
-          <div className='flex gap-12 sm:grid-row-2 mx-[10px] pb-4'>
+         <div className='md:grid gap-2 items-center justify-center mx-auto mb-6'>
+          <div className='flex gap-8 sm:grid-row-2 mx-[10px] pb-4'>
             <img src={Html} alt='' className='w-[50px] h-[50px]'/>
             <img src={Reacto} alt='' className='w-[50px] h-[50px]'/>
             <img src={Css} alt='' className='w-[50px] h-[50px]'/>
             <img src={Git} alt='' className='w-[50px] h-[50px]'/>
             </div>
-            <div className='flex gap-12 sm:grid-row-2 mx-[10px] pb-4'>
+            <div className='flex gap-8 sm:grid-row-2 mx-[10px] pb-4'>
             <img src={Github} alt='' className='w-[50px] h-[50px] rounded-full'/>
             <img src={Javascript} alt='' className='w-[50px] h-[50px]'/>
-            <img src={Nextjs} alt='' className='w-[50px] h-[50px]'/>
-            <img src={Native} alt='' className='w-[50px] h-[50px]'/>
+            <img src={Nextjs} alt='' className='w-[50px] h-[50px] rounded-full'/>
+            <img src={Native} alt='' className='w-[50px] h-[50px] rounded-full'/>
             </div>
-             <div className='flex gap-12 sm:grid-row-2 mx-[12px]'>
+             <div className='flex gap-8 sm:grid-row-2 mx-[12px]'>
             <img src={Php} alt='' className='w-[50px] h-[50px] rounded-full'/>
             <img src={Tai} alt='' className='w-[50px] h-[50px]'/>
             <img src={illustrator} alt='' className='w-[50px] h-[50px]'/>
