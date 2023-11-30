@@ -21,20 +21,20 @@ const About = () => {
   }, []);
 
   return (
-    <section className="min-h-screen flex p-10 md:flex-row grid-col-2 items-center justify-center overflow-hidden">
+    <section className="h-screen flex px-6 md:flex-row grid-col-2 items-center justify-center overflow-hidden">
 
       <div data-aos='fade-left' className='w-[1640px] flex mx-auto justify-around'>
          <img src={img} alt='' className='sm:flex hidden '/>
         <div>
         <div className='md:w-[50rem] text-white '>
-        <h1 className='py-4 font-bold text-2xl flex justify-center'>About</h1>
-        <p className='lg:w-[50rem] pb-8 grid justify-center text-center font-sm'>I'm a full stack developer based in Nigeria with 
+        <h1 className=' font-bold text-2xl flex justify-center mb-2'>About</h1>
+        <p className='lg:w-[50rem] grid justify-center text-center font-sm mb-4'>I'm a full stack developer based in Nigeria with 
         2 years of experience in the development industry. My core 
         strengths are Frontend development (React), UI/UX(Figma), Graphics 
         Design and illustration (Photoshop). if you' re not here for that, you'll
          probably find me building projects and having fun on Twitter, or networking 
          badly on LinkedIn</p></div>
-         <div className='md:grid gap-6 items-center justify-center mx-auto'>
+         <div className='md:grid gap-6 items-center justify-center mx-auto mb-6'>
           <div className='flex gap-12 sm:grid-row-2 mx-[10px] pb-4'>
             <img src={Html} alt='' className='w-[50px] h-[50px]'/>
             <img src={Reacto} alt='' className='w-[50px] h-[50px]'/>
