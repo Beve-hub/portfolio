@@ -33,7 +33,7 @@ const Project = () => {
         </div> 
       </div>
 
-      <div className='py-[5rem] max-w-[1640px] md:mx-auto grid-col grid-cols-2 gap-10 px-20 justify-center w-[80rem]  cursor-pointer '> 
+      <div className=' max-w-[1640px] md:mx-auto grid-col grid-cols-2 gap-10 px-20 justify-center w-[80rem]  cursor-pointer '> 
        
       <Swiper
         slidesPerView={3}
