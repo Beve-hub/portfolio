@@ -7,8 +7,9 @@ import About from './Page/About'
 import Blog from './Page/Blog';
 import Project from './Page/Project';
 import Contact from './Page/Contact';
-import UIUX from './Page/UIUX';
-import WebDev from './Page/Webdev';
+import Web from './Page/Web';
+import Mobile from './Page/Mobile';
+
 
 function App() {
   return (
@@ -20,9 +21,9 @@ function App() {
     <Route path='About' element={<About/>}/>
     <Route path='Project' element={<Project/>}/>
     <Route path='Contact' element={<Contact/>}/>
-    <Route path='UIUX' element={<UIUX/>}/>
-    <Route path='WebDev' element={<WebDev/>}/>
-    <Route path='Blog' element={<Blog/>}/>
+    <Route path='Web' element={<Web/>}/>
+    <Route path='Mobile' element={<Mobile/>}/>
+     <Route path='Blog' element={<Blog/>}/>
    </Routes>
    </BrowserRouter>
   );

@@ -71,7 +71,7 @@ export const link = [
 
 
 export const lint = [
-    {id: 1, link: 'https://medium.com/@victorokeke89', icon: <BsMedium/>},
+    {id: 1, link: 'https://calendar.google.com/calendar/u/0/r', icon: <BsMedium/>},
     {id: 2, link: 'https://twitter.com/future007_man', icon: <AiOutlineTwitter/>},
     {id: 3, link: 'https://www.behance.net/victorokeke', icon: <AiOutlineBehance/>},
     {id: 4, link: 'https://www.linkedin.com/in/victor-okeke-66a576218', icon: <AiOutlineLinkedin/>}

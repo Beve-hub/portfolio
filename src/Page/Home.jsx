@@ -7,6 +7,7 @@ import Shapes from '../Images/Ellipse 8.png'
 import Anime from '../Images/anime.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import {useNavigate} from 'react-router-dom'
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
     AOS.init({duration: 2000})
   }, []);
   
+  const navigate = useNavigate();
   return (
     <div className='px-[10rem] max-w-[1640px] mx-auto grid md:grid-cols-2 gap-12 justify-center  overflow-hidden'>                   
       <div className="md:grid top-[20rem] right-[13rem] sm:absolute flex justify-center mt-[3rem]">
@@ -32,7 +34,7 @@ const Home = () => {
 
    <div>
       <div className='grid gap-2 mt-[7rem]  sm:grid justify-center mx-auto' >
-      <div className='flex bg-white w-[20rem] py-2 px-5 gap-4 rounded-md' data-aos='zoom-in'>
+      <div onClick={() => navigate("/About")} className='flex bg-white w-[20rem] py-2 px-5 gap-4 rounded-md' data-aos='zoom-in'>
        <img src={IMG1} alt='solve_img' className='w-[50px] rounded-full'/>
        <div className=''>
         <p>Hi, i'm</p>
