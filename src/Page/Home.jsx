@@ -2,7 +2,6 @@ import React, {useEffect} from 'react'
 import { link } from './../data';
 import IMG1 from '../Images/picture.png'
 import CV from '../Images/resume1.pdf'
-import Shape from '../Images/Ellipse 7.png'
 import Shapes from '../Images/Ellipse 8.png'
 import Anime from '../Images/anime.png'
 import AOS from 'aos'
@@ -17,8 +16,8 @@ const Home = () => {
   
   const navigate = useNavigate();
   return (
-    <section className='max-w-[1200px] h-screen mx-auto grid md:grid-cols-2 gap-12 justify-center  overflow-x-y-hidden'>                   
-      <div className="md:grid top-[20rem] right-[13rem] sm:absolute flex justify-center mt-[3rem]">
+    <section className='max-w-[1200px] h-screen mx-auto grid md:grid-cols-2 gap-12 justify-center  overflow-hidden'>                   
+      <div className="md:grid top-[20rem] right-[13rem] sm:absolute flex justify-center mt-[2rem]">
       {link.map((item, index) => (
         <a
           key={index}
