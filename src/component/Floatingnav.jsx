@@ -6,7 +6,7 @@ import { NavLink} from 'react-router-dom';
 const Floatingnav = () => {
     const [active, setActive] = useState(0);
     return (
-     <div className='absolute bottom-0 w-full mx-3 md:hidden sm:backdrop-opacity-10 py-4 bg-[#142149] backdrop-opacity-30 px-6 rounded-full'>
+     <div className='absolute bottom-0 w-full mx-3 md:hidden sm:backdrop-opacity-10 py-2 bg-[#142149] backdrop-opacity-30 px-6 '>
         <ul className=' flex justify-around items-center' >
             {float.map(({name,path,icon},index) => {
           return (

@@ -51,7 +51,7 @@ const Home = () => {
       </div>
       <div>
       <div className=''>
-       <img src={Anime} alt='hero_img' className='md:absolute left-[45rem] w-[25rem] top-[13rem] z-10 ' data-aos='zoom-in'/>
+       <img src={Anime} alt='hero_img' className='md:absolute left-[45rem] w-[25rem] top-[13rem] z-10 sm:grid hidden' data-aos='zoom-in'/>
       </div>
       <img src={Shapes} alt='elip' className='md:absolute w-[40px] bottom-10 left-[40rem] animate-bounce sm:flex hidden ' />
       </div> 
