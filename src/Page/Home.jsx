@@ -17,7 +17,7 @@ const Home = () => {
   
   const navigate = useNavigate();
   return (
-    <div className='px-[10rem] max-w-[1640px] mx-auto grid md:grid-cols-2 gap-12 justify-center  overflow-hidden'>                   
+    <section className='max-w-[1200px] h-screen mx-auto grid md:grid-cols-2 gap-12 justify-center  overflow-x-y-hidden'>                   
       <div className="md:grid top-[20rem] right-[13rem] sm:absolute flex justify-center mt-[3rem]">
       {link.map((item, index) => (
         <a
@@ -30,12 +30,12 @@ const Home = () => {
           {item.icon}
         </a>
       ))}
-    </div>
+      </div>
 
-   <div>
-      <div className='grid gap-2 mt-[7rem]  sm:grid justify-center mx-auto' >
+   <div className='h-[40rem] grid justify-center items-center '>
+      <div className=' grid gap-2 sm:grid  justify-center mx-auto' >
       <div onClick={() => navigate("/About")} className='flex bg-white w-[20rem] py-2 px-5 gap-4 rounded-md' data-aos='zoom-in'>
-       <img src={IMG1} alt='solve_img' className='w-[50px] rounded-full'/>
+       <img src={IMG1} alt='solve_img' className='w-[50px] rounded-full '/>
        <div className=''>
         <p>Hi, i'm</p>
         <h1 className='md:font-bold text-lg'>VIctor okeke</h1>
@@ -51,12 +51,12 @@ const Home = () => {
       </div>
       <div>
       <div className=''>
-       <img src={Anime} alt='hero_img' className='md:absolute left-[45rem] w-[25rem] top-[13rem] z-10 s' data-aos='zoom-in'/>
+       <img src={Anime} alt='hero_img' className='md:absolute left-[45rem] w-[25rem] top-[13rem] z-10 ' data-aos='zoom-in'/>
       </div>
       <img src={Shapes} alt='elip' className='md:absolute w-[40px] bottom-10 left-[40rem] animate-bounce sm:flex hidden ' />
       </div> 
     </div>
-    </div>
+    </section>
   )
 }
 
