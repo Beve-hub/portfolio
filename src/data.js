@@ -73,6 +73,6 @@ export const link = [
 export const lint = [
     {id: 1, link: 'https://wa.me/08184207181?text=', icon: <MdOutlineWhatsapp />},
     {id: 2, link: 'https://twitter.com/future007_man', icon: <AiOutlineTwitter/>},
-    {id: 3, link: 'tel:+08184207181', icon: <MdAddCall /> },
+    {id: 3, link: 'tel:+2348184207181', icon: <MdAddCall /> },
     {id: 4, link: 'https://www.linkedin.com/in/victor-okeke-66a576218', icon: <AiOutlineLinkedin/>}
 ]
