@@ -19,7 +19,7 @@ const Project = () => {
 
   return (
     <section className="h-screen flex px-10 md:flex-row grid-col-2 items-center justify-center overflow-hidden">
-      <div  className=' max-w-[1640px] md:mx-auto grid-cols-2 gap-6 px-20 pb-20 justify-center  cursor-pointer '> 
+      <div  className=' max-w-[1640px] md:mx-auto grid-cols-2 gap-6 px-20 pb-[10rem] justify-center  cursor-pointer '> 
       <h1 className='flex justify-center font-bold text-white text-2xl'>Our Amazing Project</h1>
       <div className='flex gap-6 justify-center my-6'>
         <div className=' bg-black text-white px-8 p-2  flex justify-center  rounded-lg'>

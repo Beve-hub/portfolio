@@ -3,7 +3,7 @@ import {AiOutlineBehance} from 'react-icons/ai'
 import {AiOutlineGithub} from 'react-icons/ai'
 import {AiOutlineLinkedin} from 'react-icons/ai'
 import {BsMedium} from 'react-icons/bs'
-import { MdHomeFilled, MdPropaneTank, MdContacts, MdContactEmergency } from "react-icons/md";
+import { MdHomeFilled, MdPropaneTank, MdContacts, MdContactEmergency,  MdAddCall, MdOutlineWhatsapp } from "react-icons/md";
 
 
 
@@ -71,8 +71,8 @@ export const link = [
 
 
 export const lint = [
-    {id: 1, link: 'https://calendar.google.com/calendar/u/0/r', icon: <BsMedium/>},
+    {id: 1, link: 'https://wa.me/08184207181?text=', icon: <MdOutlineWhatsapp />},
     {id: 2, link: 'https://twitter.com/future007_man', icon: <AiOutlineTwitter/>},
-    {id: 3, link: 'https://www.behance.net/victorokeke', icon: <AiOutlineBehance/>},
+    {id: 3, link: 'tel:+08184207181', icon: <MdAddCall /> },
     {id: 4, link: 'https://www.linkedin.com/in/victor-okeke-66a576218', icon: <AiOutlineLinkedin/>}
 ]
