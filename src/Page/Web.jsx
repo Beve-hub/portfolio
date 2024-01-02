@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Certvault  from '../Images/project1.png'
 import design  from '../Images/project6.png'
 import Ezigbo from '../Images/ezigbo.jpg'
+import Auxinbot from '../Images/auxibolt.png'
 
 
 import 'swiper/css';
@@ -39,6 +40,14 @@ const Web = () => {
         modules={[Pagination]}
         className="mySwiper">
 
+        <SwiperSlide>
+          <div className='w-[15rem] items-center text-white text-center border-none bg-[#48587C] p-4 rounded-lg hover:bg-[#9747FF]'>
+            <img src={Auxinbot} alt='hero_img' />
+            <h2 className='font-bold my-3 text-lg'>Auxibot</h2>
+            <p className='font-light text-sm'>Auxibot is a automatic bot system that allow users to create a task and set reminder for a schedule program or event.it also function as a Ai system that where question can be asked and interraction between a user and the bot.it was made with react.js and figma. </p>
+          </div>
+       </SwiperSlide>
+       
        <SwiperSlide>
           <div className='w-[15rem] items-center text-white text-center border-none bg-[#48587C] p-4 rounded-lg hover:bg-[#9747FF]'>
             <img src={Ezigbo} alt='hero_img' />

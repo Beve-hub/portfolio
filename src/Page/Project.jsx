@@ -8,6 +8,7 @@ import vest  from '../Images/project3.png'
 import aviator  from '../Images/project4.png'
 import Kiko  from '../Images/project2.png'
 import Ezigbo from '../Images/ezigbo.jpg'
+import Auxinbot from '../Images/auxibolt.png'
 import nine from '../Images/nine.png'
 import Northern from '../Images/1.png'
 import 'swiper/css';
@@ -22,7 +23,7 @@ const Project = () => {
     <section className="h-screen flex px-10 md:flex-row grid-col-2 items-center justify-center overflow-hidden">
       <div  className=' max-w-[1640px] md:mx-auto grid-cols-2 gap-6 px-20 pb-[10rem] justify-center  cursor-pointer '> 
       <h1 className='flex justify-center font-bold text-white text-2xl'>Our Amazing Project</h1>
-      <div className='flex gap-6 justify-center my-12'>
+      <div className='flex gap-6 justify-center my-20'>
         <div className=' bg-black text-white px-8 p-2  flex justify-center  rounded-lg'>
           <p >UIUX</p>
         </div>
@@ -42,12 +43,18 @@ const Project = () => {
         }}
         modules={[Pagination]}
         className="mySwiper">
-        
+         <SwiperSlide>
+          <div className='w-[15rem] items-center text-white text-center border-none bg-[#48587C] p-4 rounded-lg hover:bg-[#9747FF]'>
+            <img src={Auxinbot} alt='hero_img' />
+            <h2 className='font-bold my-3 text-lg'>Auxibot</h2>
+            <p className='font-light text-sm'>Auxibot is a automatic bot system that allow users to create a task and set reminder for a schedule program or event.it also function as a Ai system that where question can be asked and interraction between a user and the bot.it was made with react.js and figma. </p>
+          </div>
+       </SwiperSlide>
         <SwiperSlide>
           <div className='w-[15rem] items-center text-white text-center border-none bg-[#48587C] p-4 rounded-lg hover:bg-[#9747FF]'>
             <img src={Northern} alt='hero_img' />
             <h2 className='font-bold my-3 text-lg'>Northern EV</h2>
-            <p className='font-light text-sm'>Northern EV is an app that allow electric vehicle owners find the nearest charging station closes  to him with an integrated mapping systemt. it was made designed using figma. </p>
+            <p className='font-light text-sm'>Northern EV is an app that allow electric vehicle owners find the nearest charging station closes  to him . it was designed using figma. </p>
           </div>
        </SwiperSlide>
 

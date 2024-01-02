@@ -19,10 +19,10 @@ function App() {
     <Route index element={<Home/>} />
     <Route path='About' element={<About/>}/>
     <Route path='Project' element={<Project/>}/>
-    <Route path='Contact' element={<Contact/>}/>
     <Route path='Web' element={<Web/>}/>
     <Route path='Mobile' element={<Mobile/>}/>
      <Route path='Blog' element={<Blog/>}/>
+     <Route path='Contact' element={<Contact/>}/>
    </Routes>
    </BrowserRouter>
   );

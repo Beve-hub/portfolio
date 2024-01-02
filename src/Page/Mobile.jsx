@@ -2,6 +2,8 @@ import React, {useRef, useState} from 'react'
 import {useNavigate} from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import IMG1 from '../Images/learn.png'
+import Afritune from '../Images/afri-tune.png'
+import beve from '../Images/beve-food.png'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
@@ -36,19 +38,20 @@ const Mobile = () => {
         className="mySwiper">
 
        <SwiperSlide>
-        
-         <div className='w-[15rem] items-center text-white text-center border-none bg-[#48587C] p-4 rounded-lg hover:bg-[#9747FF]'>
-             <img src={IMG1} alt='hero_img' />
-            <p className='font-light text-sm'> Still learning </p>
+          <div className='w-[15rem] items-center text-white text-center border-none bg-[#48587C] p-4 rounded-lg hover:bg-[#9747FF]'>
+            <img src={Afritune} alt='hero_img' className='h-[30]' />
+            <h2 className='font-bold my-3 text-lg'>AFri-Tone</h2>
+            <p className='font-light text-sm'>Afri-tone is a mobile app that help foreigners and tourist who are interested in coming to west africa to learn and  speak their language and also communicate with the locals around the area easly.it was designed using figma and reactNative. </p>
           </div>
        </SwiperSlide>
+
        <SwiperSlide>
-        
-       <div className='w-[15rem] items-center text-white text-center border-none bg-[#48587C] p-4 rounded-lg hover:bg-[#9747FF]'>
-         <img src={IMG1} alt='hero_img' />
-            <p className='font-light text-sm'> Still learning </p>
+          <div className='w-[15rem] items-center text-white text-center border-none bg-[#48587C] p-4 rounded-lg hover:bg-[#9747FF]'>
+            <img src={beve} alt='hero_img' className='h-[30]' />
+            <h2 className='font-bold my-3 text-lg'>Beve Food</h2>
+            <p className='font-light text-sm'>beve food is a an ecommerce app that helps users place and order food from the comfort of his home and get delivered to him/her within a short period of time.it was designed using figma and reactNative. </p>
           </div>
-      </SwiperSlide>
+       </SwiperSlide>
       <SwiperSlide>
         
         <div className='w-[15rem] items-center text-white text-center border-none bg-[#48587C] p-4 rounded-lg hover:bg-[#9747FF]'>
