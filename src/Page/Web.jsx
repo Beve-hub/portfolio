@@ -17,9 +17,9 @@ const Web = () => {
 
   return (
     <section className="h-screen flex p-10 md:flex-row grid-col-2 items-center justify-center overflow-hidden">
-      <div  className=' max-w-[1640px] md:mx-auto grid-cols-2 gap-6 px-20 pb-[10rem] justify-center  cursor-pointer '> 
+      <div  className=' max-w-[1640px] md:mx-auto grid-cols-2 gap-6 px-20 pb-[10rem] justify-center  cursor-pointer mt-[16rem]'> 
       <h1 className='flex justify-center font-bold text-white text-2xl'>Our Amazing Project</h1>
-      <div className='flex gap-6 justify-center my-12'>
+      <div className='flex gap-6 justify-center my-8'>
         <div onClick={() => navigate("/Project")}  className=' bg-[#48587C] text-white px-8 p-2  flex justify-center  rounded-lg'>
           <p >UIUX</p>
         </div>

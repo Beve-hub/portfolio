@@ -22,8 +22,7 @@ const About = () => {
 
   return (
     <section className="h-screen flex px-6 md:flex-row grid-col-2 items-center justify-center overflow-hidden">
-
-      <div data-aos='fade-left' className='w-[1640px] flex mx-auto justify-around pb-[10rem]'>
+      <div data-aos='fade-left' className='w-[1640px] flex mx-auto justify-around pb-[10rem] mt-[16rem]'>
          <img src={img} alt='' className='sm:flex hidden '/>
         <div>
         <div className='md:w-[40rem] text-white '>
