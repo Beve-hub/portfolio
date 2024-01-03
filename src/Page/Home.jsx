@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import { link } from './../data';
 import IMG1 from '../Images/picture.png'
-import CV from '../Images/resume1.pdf'
+import CV from '../Images/tech Resume.pdf'
 import Shapes from '../Images/Ellipse 8.png'
 import Anime from '../Images/anime.png'
 import AOS from 'aos'
