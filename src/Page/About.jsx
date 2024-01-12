@@ -29,13 +29,13 @@ const About = () => {
       <div  className='w-[1640px] flex mx-auto justify-around pb-[10rem] mt-[16rem]'>
 
       <div  className='absolute top-10 right-20  items-center px-5 rounded-md sm:grid hidden' >                 
-        <div className="flex justify-between">
+        <div className="flex justify-between gap-2">
         <IoIosArrowRoundBack onClick={() => navigate("/")} size='24' className='bg-[white] rounded-2xl'/>
         <IoIosArrowRoundForward onClick={() => navigate("/Project")} size='24' className='bg-[white] rounded-2xl'/>
         </div>
         </div>
 
-         <img src={img} alt='' className='sm:flex hidden '/>
+         <img src={img} alt='' className='w-[25rem] rounded-t-[15rem] sm:flex hidden '/>
         <div>
         <div className='md:w-[40rem] text-white '>
         <h1 className=' font-bold text-2xl flex justify-center item-center mb-2'>About</h1>

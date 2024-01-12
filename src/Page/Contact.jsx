@@ -11,13 +11,13 @@ const Contact = () => {
 
   return (
     <section className="h-screen flex px-10 md:flex-row grid-col-2 items-center justify-center overflow-hidden">
-      <div  className=' max-w-[1640px] md:mx-auto grid-cols-2 gap-6 px-20 pb-[10rem] justify-center  cursor-pointer mt-[16rem]'> 
+      <div  className=' max-w-[1640px] md:mx-auto grid-cols-2 gap-6 px-20 pb-[10rem] justify-center  cursor-pointer '> 
       <div  className='absolute top-10 right-20  items-center px-5 rounded-md sm:grid hidden' >  
                   
         <div className="flex justify-between gap-6">
         < GrHomeRounded onClick={() => navigate("/")} size='22' className='bg-[white] rounded-2xl p-1'/>  
-        <IoIosArrowRoundBack onClick={() => navigate("/About")} size='24' className='bg-[white] rounded-2xl'/>
-        <IoIosArrowRoundForward onClick={() => navigate("/Contact")} size='24' className='bg-[white] rounded-2xl'/>
+        <IoIosArrowRoundBack onClick={() => navigate("/Project")} size='24' className='bg-[white] rounded-2xl'/>
+        <IoIosArrowRoundForward size='24' className='bg-[white] rounded-2xl'/>
         </div>
         </div>
 

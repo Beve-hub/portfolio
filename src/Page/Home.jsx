@@ -46,7 +46,8 @@ const Home = () => {
         </div>
 
         <div  className='absolute bottom-20  py-2 px-5 gap-4 rounded-md sm:grid hidden' >
-               <div onClick={() => navigate("/Contact")} className=' bg-white h-[3rem]  w-[10rem] items-center px-5 rounded-md sm:grid hidden' >                 
+        <p className='flex text-end text-sm text-[white]'>CONTACT ME  </p>
+         <div onClick={() => navigate("/Contact")} className=' bg-white h-[3rem]  w-[10rem] items-center px-5 rounded-md sm:grid hidden' >                 
         <div className="flex justify-between">
         <p className='flex text-end text-sm'>Hire Me</p>
         <SiMinutemailer size='24' className='bg-[#12121220] rounded-2xl'/>
@@ -54,17 +55,21 @@ const Home = () => {
         </div>
         </div>
      
-      <div onClick={() => navigate("/About")} className='flex bg-white w-[20rem] py-2 px-5 gap-4 rounded-md' data-aos='zoom-in'>
-       <img src={IMG1} alt='solve_img' className='w-[50px] rounded-full '/>
+      <div onClick={() => navigate("/About")}  className='flex bg-white w-[20rem] py-2 px-5 gap-4 rounded-md' data-aos='zoom-in'>
+       <img src={IMG1} alt='solve_img' className='w-[50px] h-[50px] rounded-full '/>
        <div className=''>
         <p>Hi, i'm</p>
         <h1 className='md:font-bold text-lg'>VIctor okeke</h1>
-       </div>
+        </div>
        </div> 
 
-       <div className='md:flex bg-white w-[20rem] py-2 px-5 gap-4 rounded-md' data-aos='zoom-in'>
-        <p className='flex text-end text-sm'>A Front-End Developer / UI UXDesigner
-                         Graphic Designer</p>
+       <div className='md:flex bg-white w-[20rem] py-2 px-5 gap-4 rounded-md' onClick={() => navigate("/About")}  data-aos='zoom-in'>
+        <p className='flex text-start text-sm'>A Front-End Developer / UI UXDesigner
+        Graphic Designer.           </p>
+        <div  className="flex justify-between ml-0">
+        
+        <IoIosArrowRoundForward size='24' className='bg-[#12121220] rounded-2xl'/>
+        </div>
         </div>
         
       <div className='md:flex bg-black font-sm text-white text-sm w-[12rem] ml-[8rem] py-2 px-5 gap-4 rounded-md' data-aos='zoom-in'>
