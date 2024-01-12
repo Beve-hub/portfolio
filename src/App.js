@@ -1,5 +1,4 @@
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
-import Navbar from './component/Navbar';
 import Floatingnav from './component/Floatingnav';
 import Home from './Page/Home'
 import About from './Page/About'
@@ -13,8 +12,7 @@ import Mobile from './Page/Mobile';
 function App() {
   return (
    <BrowserRouter>
-   <Navbar/>
-   <Floatingnav/>
+      <Floatingnav/>
    <Routes>
     <Route index element={<Home/>} />
     <Route path='About' element={<About/>}/>

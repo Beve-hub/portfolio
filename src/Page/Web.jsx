@@ -1,4 +1,3 @@
-import React, {useRef, useState} from 'react'
 import {useNavigate} from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Certvault  from '../Images/project1.png'
@@ -6,24 +5,36 @@ import design  from '../Images/project6.png'
 import Ezigbo from '../Images/ezigbo.jpg'
 import Auxinbot from '../Images/auxibolt.png'
 
-
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import './Style.css';
+import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
+import { GrHomeRounded } from "react-icons/gr";
+
 
 const Web = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="h-screen flex p-10 md:flex-row grid-col-2 items-center justify-center overflow-hidden">
+    <section className="h-screen flex px-10 md:flex-row grid-col-2 items-center justify-center overflow-hidden">
       <div  className=' max-w-[1640px] md:mx-auto grid-cols-2 gap-6 px-20 pb-[10rem] justify-center  cursor-pointer mt-[16rem]'> 
+      <div  className='absolute top-10 right-20  items-center px-5 rounded-md sm:grid hidden' >  
+                  
+      <div className="flex justify-between gap-6">
+        < GrHomeRounded onClick={() => navigate("/")} size='22' className='bg-[white] rounded-2xl p-1'/>  
+        <IoIosArrowRoundBack onClick={() => navigate("/About")} size='24' className='bg-[white] rounded-2xl'/>
+        <IoIosArrowRoundForward onClick={() => navigate("/Contact")} size='24' className='bg-[white] rounded-2xl'/>
+        </div>
+        </div>
+     
+        
       <h1 className='flex justify-center font-bold text-white text-2xl'>Our Amazing Project</h1>
-      <div className='flex gap-6 justify-center my-8'>
-        <div onClick={() => navigate("/Project")}  className=' bg-[#48587C] text-white px-8 p-2  flex justify-center  rounded-lg'>
+      <div className='flex gap-6 justify-center my-14'>
+        <div onClick={() => navigate("/Project")} className='bg-[#48587C]  px-8 p-2  flex justify-center  rounded-lg'>
           <p >UIUX</p>
         </div>
-        <div  className='bg-black  px-4 p-2 text-white  flex justify-center rounded-lg cursor-pointer'>
+        <div  className=' bg-black text-white   px-4 p-2 text-white  flex justify-center rounded-lg cursor-pointer'>
           <p >WEB Dev</p>
         </div>
         <div onClick={() => navigate("/Mobile")} className='bg-[#48587C]  text-white px-4 py-2 flex justify-center  rounded-lg cursor-pointer'>
@@ -39,8 +50,7 @@ const Web = () => {
         }}
         modules={[Pagination]}
         className="mySwiper">
-
-        <SwiperSlide>
+         <SwiperSlide>
           <div className='w-[15rem] items-center text-white text-center border-none bg-[#48587C] p-4 rounded-lg hover:bg-[#9747FF]'>
             <img src={Auxinbot} alt='hero_img' />
             <h2 className='font-bold my-3 text-lg'>Auxibot</h2>
@@ -48,6 +58,7 @@ const Web = () => {
           </div>
        </SwiperSlide>
        
+
        <SwiperSlide>
           <div className='w-[15rem] items-center text-white text-center border-none bg-[#48587C] p-4 rounded-lg hover:bg-[#9747FF]'>
             <img src={Ezigbo} alt='hero_img' />
