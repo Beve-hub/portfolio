@@ -26,7 +26,7 @@ const About = () => {
   return (
     <section className="h-screen flex px-6 md:flex-row grid-col-2 items-center justify-center overflow-hidden">
       
-      <div  className='w-[1640px] flex mx-auto justify-around pb-[10rem] mt-[16rem]'>
+      <div  className='w-[1640px] flex mx-auto justify-around pb-[20rem] mt-[16rem]'>
 
       <div  className='absolute top-10 right-20  items-center px-5 rounded-md sm:grid hidden' >                 
         <div className="flex justify-between gap-2">
