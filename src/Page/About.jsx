@@ -35,12 +35,11 @@ const About = () => {
         </div>
         </div>
 
-         <img src={img} alt='' className='w-[25rem] rounded-t-[15rem] sm:flex hidden '/>
+         <img src={img} alt='' className='w-[25rem] rounded-t-[1hb 5rem] sm:flex hidden '/>
         <div>
         <div className='md:w-[40rem] text-white '>
         <h1 className=' font-bold text-2xl flex justify-center item-center mb-2'>About</h1>
-        <p className='lg:w-[40rem] grid justify-center  font-sm mb-4 ml-'>I'm a full stack developer based in Nigeria with 
-        54 years of experience in the development industry. My core 
+        <p className='lg:w-[40rem] grid justify-center  font-sm mb-4 ml-'>I'm a full stack developer based in Nigeria with 4 years of experience in the development industry. My core 
         strengths are Frontend development (React),(React Native), UI/UX(Figma), Graphics 
         Design and illustration (Photoshop). if you' re not here for that, you'll
          probably find me building projects and having fun on Twitter, or networking 
