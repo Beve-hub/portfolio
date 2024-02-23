@@ -50,34 +50,34 @@ const Mobile = () => {
         modules={[Pagination]}
         className="mySwiper">
          <SwiperSlide>
-          <div className='w-[15rem] items-center text-white text-center border-none bg-[#48587C] p-4 rounded-lg hover:bg-[#9747FF]'>
+         <div className='w-[16rem]  items-center justify-center text-white text-center border-none bg-[#48587C] p-6 rounded-lg hover:bg-[#9747FF]'>
             <img src={Northern} alt='hero_img' />
             <h2 className='font-bold my-3 text-lg'>Northern EV</h2>
-            <p className='font-light text-sm'>Northern EV is an app that allow electric vehicle owners find the nearest charging station closes  to him and also allow user book a spot before time . it was designed using figma and developed with react native. </p>
+            <p className='font-light text-sm text-center w-[14rem]'>Northern EV is an app that allow electric vehicle owners find the nearest charging station closes  to him and also allow user book a spot before time . it was designed using figma and developed with react native. </p>
           </div>
        </SwiperSlide>
 
        <SwiperSlide>
-          <div className='w-[15rem] items-center text-white text-center border-none bg-[#48587C] p-4 rounded-lg hover:bg-[#9747FF]'>
+       <div className='w-[16rem]  items-center justify-center text-white text-center border-none bg-[#48587C] p-6 rounded-lg hover:bg-[#9747FF]'>
             <img src={vest} alt='hero_img' />
             <h2 className='font-bold my-3 text-lg'>Afri-tune</h2>
-            <p className='font-light text-sm'>Afri-tune is a mobile application that helps tourist or traveller to learn and communicate with the locals in every part of west africa. it was design with figma and developed with react native.  </p>
+            <p className='font-light text-sm text-center w-[14rem]'>Afri-tune is a mobile application that helps tourist or traveller to learn and communicate with the locals in every part of west africa. it was design with figma and developed with react native.  </p>
           </div>
        </SwiperSlide>
 
        <SwiperSlide>
-          <div className='w-[15rem] items-center text-white text-center border-none bg-[#48587C] p-4 rounded-lg hover:bg-[#9747FF]'>
+       <div className='w-[16rem]  items-center justify-center text-white text-center border-none bg-[#48587C] p-6 rounded-lg hover:bg-[#9747FF]'>
             <img src={room} alt='hero_img' />
             <h2 className='font-bold my-3 text-lg'>Idea Roommate</h2>
-            <p className='font-light text-sm'>Idea Roommate is an app that allow users to find accommodation or a roommate from with the city and outside the country . it was made designed using figma. </p>
+            <p className='font-light text-sm text-center w-[14rem]'>Idea Roommate is an app that allow users to find accommodation or a roommate from with the city and outside the country . it was made designed using figma. </p>
           </div>
        </SwiperSlide>
 
        <SwiperSlide>
-          <div className='w-[15rem] items-center text-white text-center border-none bg-[#48587C] p-4 rounded-lg hover:bg-[#9747FF]'>
+       <div className='w-[16rem]  items-center justify-center text-white text-center border-none bg-[#48587C] p-6 rounded-lg hover:bg-[#9747FF]'>
             <img src={design} alt='hero_img' />
             <h2 className='font-bold my-3 text-lg'>Beve Food</h2>
-            <p className='font-light text-sm'>beve Food is  an ecommerce mobile application that allow users to place order for food and also make payment online, to be delievered within 10 to 30 minutes.it was made with react.js and figma. </p>
+            <p className='font-light text-sm text-center w-[14rem]'>beve Food is  an ecommerce mobile application that allow users to place order for food and also make payment online, to be delievered within 10 to 30 minutes.it was made with react.js and figma. </p>
           </div>
        </SwiperSlide>
 

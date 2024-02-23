@@ -53,45 +53,46 @@ const Web = () => {
         className="mySwiper">
 
         <SwiperSlide>
-          <div className='w-[15rem] items-center text-white text-center border-none bg-[#48587C] p-4 rounded-lg hover:bg-[#9747FF]'>
-            <img src={maker} alt='hero_img' />
+          <div className='w-[16rem]  items-center justify-center text-white text-center border-none bg-[#48587C] p-6 rounded-lg hover:bg-[#9747FF]'>
+            <img src={maker} alt='hero_img'  />
             <h2 className='font-bold my-3 text-lg'>101 Money maker</h2>
-            <p className='font-light text-sm text-center'>101 is a crypto broker investment website. i was responsible for the Ui implementation of the landing page and user dashboard. it was developed using HTML, Bootstrap and javascript. </p>
+            
+            <p className='font-light text-sm text-center w-[14rem]'>101 is a crypto broker investment website. i was responsible for the Ui implementation of the landing page and user dashboard. it was developed using HTML, Bootstrap and javascript. </p>
           </div>
        </SwiperSlide>
 
          <SwiperSlide>
-          <div className='w-[15rem] items-center text-white text-center border-none bg-[#48587C] p-4 rounded-lg hover:bg-[#9747FF]'>
+         <div className='w-[16rem]  items-center justify-center text-white text-center border-none bg-[#48587C] p-6 rounded-lg hover:bg-[#9747FF]'>
             <img src={Auxinbot} alt='hero_img' />
             <h2 className='font-bold my-3 text-lg'>Auxibot</h2>
-            <p className='font-light text-sm text-center'>Auxibot is a automatic bot system that allow users to create a task and set reminder for a schedule program or event.it also function as a Ai system that where question between a user and the bot.it was made with react.js and figma. </p>
+            <p className='font-light text-sm text-center w-[14rem]'>Auxibot is a automatic bot system that allow users to create a task and set reminder for a schedule program or event.it also function as a Ai system that where question between a user and the bot.it was made with react.js and figma. </p>
           </div>
        </SwiperSlide>
        
 
        <SwiperSlide>
-          <div className='w-[15rem] items-center text-white text-center border-none bg-[#48587C] p-4 rounded-lg hover:bg-[#9747FF]'>
+       <div className='w-[16rem]  items-center justify-center text-white text-center border-none bg-[#48587C] p-6 rounded-lg hover:bg-[#9747FF]'>
             <img src={Ezigbo} alt='hero_img' />
             <h2 className='font-bold my-3 text-lg'>Ezigbo</h2>
-            <p className='font-light text-sm text-center'>Ezigbo is a website that allow users check product condition and expiry date
+            <p className='font-light text-sm text-center w-[14rem]'>Ezigbo is a website that allow users check product condition and expiry date
              it also save it to the blockchain cloud using smart contract for the backend.
              it was made with react.js and figma. </p>
           </div>
        </SwiperSlide>
 
         <SwiperSlide>
-          <div className='w-[15rem] items-center text-white text-center border-none bg-[#48587C] p-4 rounded-lg hover:bg-[#9747FF]'>
+        <div className='w-[16rem]  items-center justify-center text-white text-center border-none bg-[#48587C] p-6 rounded-lg hover:bg-[#9747FF]'>
             <img src={Certvault} alt='hero_img' />
             <h2 className='font-bold my-3 text-lg'>Certvault</h2>
-            <p className='font-light text-sm text-center'>Certvault is a website that allow sector to upload and send certificate in bulk and also save it to the block chain cloud using smart contract for the backend.it was made with react.js and figma. </p>
+            <p className='font-light text-sm text-center w-[14rem]'>Certvault is a website that allow sector to upload and send certificate in bulk and also save it to the block chain cloud using smart contract for the backend.it was made with react.js and figma. </p>
           </div>
        </SwiperSlide>
 
        <SwiperSlide>
-          <div className='w-[15rem] items-center text-white text-center border-none bg-[#48587C] p-4 rounded-lg hover:bg-[#9747FF]'>
+       <div className='w-[16rem]  items-center justify-center text-white text-center border-none bg-[#48587C] p-6 rounded-lg hover:bg-[#9747FF]'>
             <img src={design} alt='hero_img' />
             <h2 className='font-bold my-3 text-lg'>Redesign</h2>
-            <p className='font-light text-sm text-center'>Redesigned a company e-learning website  where user can come and book a class and enroll for a course program and make payment.it was made with react.js and figma. </p>
+            <p className='font-light text-sm text-center w-[14rem]'>Redesigned a company e-learning website  where user can come and book a class and enroll for a course program and make payment.it was made with react.js and figma. </p>
           </div>
        </SwiperSlide>
 
