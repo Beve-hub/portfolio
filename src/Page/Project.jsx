@@ -56,12 +56,14 @@ const Project = () => {
         }}
         modules={[Pagination]}
         className="mySwiper">
-          
+
          <SwiperSlide>
          <div className='w-[16rem]  items-center justify-center text-white text-center border-none bg-[#48587C] p-6 rounded-lg hover:bg-[#9747FF]'>
             <img src={Auxinbot} alt='hero_img' />
             <h2 className='font-bold my-3 text-lg'>Auxibot</h2>
-            <p className='font-light text-sm text-center w-[14rem]'> Auxibot is a automatic bot system that allow users to create a task and set reminder for a schedule program or event.it also function as a Ai system that where question can be asked and interraction between a user and the bot.it was made with react.js and figma. </p>
+            <p className='font-light text-sm text-center w-[14rem]'>Auxibot is a automatic bot system that allow users to create a task and set reminder 
+            for a schedule program or event.it also function as a Ai system that where question between a 
+            user and the bot.it was made with react.js and figma. </p>
           </div>
        </SwiperSlide>
          <SwiperSlide>
