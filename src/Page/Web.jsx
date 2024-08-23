@@ -1,107 +1,83 @@
+import React, {useEffect} from 'react'
+import { link } from './../data';
+import IMG1 from '../Images/profile image.png'
+import CV from '../Images/okeke victor Updated.pdf'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import {  IoIosArrowRoundForward, IoIosArrowRoundDown } from "react-icons/io";
 import {useNavigate} from 'react-router-dom'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import Certvault  from '../Images/project1.png'
-import design  from '../Images/project6.png'
-import Ezigbo from '../Images/ezigbo.jpg'
-import Auxinbot from '../Images/auxibolt.png'
-import maker from '../Images/101.png'
-
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
-import './Style.css';
-import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
-import { GrHomeRounded } from "react-icons/gr";
-
 
 const Web = () => {
-  const navigate = useNavigate();
-
-  return (
-    <section className="h-screen flex px-10 md:flex-row grid-col-2 items-center justify-center overflow-hidden">
-      <div  className=' max-w-[1640px] md:mx-auto grid-cols-2 gap-6 px-20 pb-[20rem] justify-center  cursor-pointer mt-[16rem]'> 
-      <div  className='absolute top-10 right-20  items-center px-5 rounded-md sm:grid hidden' >  
-                  
-      <div className="flex justify-between gap-6">
-        < GrHomeRounded onClick={() => navigate("/")} size='22' className='bg-[white] rounded-2xl p-1'/>  
-        <IoIosArrowRoundBack onClick={() => navigate("/About")} size='24' className='bg-[white] rounded-2xl'/>
-        <IoIosArrowRoundForward onClick={() => navigate("/Contact")} size='24' className='bg-[white] rounded-2xl'/>
-        </div>
-        </div>
-     
-        
-      <h1 className='flex justify-center font-bold text-white text-2xl'>Our Amazing Project</h1>
-      <div className='flex gap-6 justify-center my-8'>
-        <div onClick={() => navigate("/Project")} className='bg-[#48587C]  px-8 p-2  flex justify-center  rounded-lg'>
-          <p >UIUX</p>
-        </div>
-        <div  className=' bg-black text-white   px-4 p-2 text-white  flex justify-center rounded-lg cursor-pointer'>
-          <p >WEB Dev</p>
-        </div>
-        <div onClick={() => navigate("/Mobile")} className='bg-[#48587C]  text-white px-4 py-2 flex justify-center  rounded-lg cursor-pointer'>
-          <p >Mobile Dev</p>
-        </div> 
-      </div>
-
-      <Swiper
-        slidesPerView={3}
-        spaceBetween={20}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper">
-
-        <SwiperSlide>
-          <div className='w-[16rem]  items-center justify-center text-white text-center border-none bg-[#48587C] p-6 rounded-lg hover:bg-[#9747FF]'>
-            <img src={maker} alt='hero_img'  />
-            <h2 className='font-bold my-3 text-lg'>101 Money maker</h2>
+    useEffect(() => {
+        AOS.init({duration: 2000})
+      }, []);
+      
+      const navigate = useNavigate();
+      return (
+        <section className=' h-screen   '>                   
+          <div className="md:grid top-[20rem] right-[13rem] sm:absolute flex justify-center mt-[2rem]">
+          {link.map((item, index) => (
+            <a
+              key={index}
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="md:hover:bg-[#9747FF] h-fit p-6 rounded text-white origin-top-left rotate-0 sm:hover:bg-[#9747FF]"
+            >
+              {item.icon}
+            </a>
+          ))}
+          </div>
+    
+       <div className='h-[40rem] grid justify-center items-center '>
+          <div className=' grid gap-2 sm:grid  justify-center mx-auto' >
+          
+    
+    
             
-            <p className='font-light text-sm text-center w-[14rem]'>101 is a crypto broker investment website. i was responsible for the Ui implementation of the landing page and user dashboard. it was developed using HTML, Bootstrap and javascript. </p>
+          <div className='absolute left-10 top-15 '>
+          <div onClick={() => navigate("/About")}  className='flex bg-white w-[20rem] py-2 px-5 gap-4 rounded-md' data-aos='zoom-in'>
+           
+           <div className=''>
+            <p>Hi, i'm</p>
+            <h1 className='md:font-bold text-lg'>VIctor okeke</h1>
+            </div>
+           </div> 
+    
+           <div className='md:flex bg-white w-[25rem] py-2 px-5 gap-4 rounded-md my-3' onClick={() => navigate("/Contact")}  data-aos='zoom-forward'>
+            <p className='flex text-start text-sm '>Are you in need of Front-End Developer(Web/mobile App) & UI/UXDesigner
+             </p>
+            <div  className="flex justify-between ml-0">
+            <div className='flex justify-center items-center'>
+              Hire Me
+            <IoIosArrowRoundForward size='24' className='bg-[#12121220] rounded-2xl'/>
+            </div>
+            
+            </div>
+            </div>
+            
+          <div className='md:flex bg-black font-sm text-white text-sm w-[12rem] justify-end py-2 px-5 gap-4 rounded-md' data-aos='zoom-in'>
+            <p><a href={CV} download >Download Resume</a></p>
           </div>
-       </SwiperSlide>
-
-         <SwiperSlide>
-         <div className='w-[16rem]  items-center justify-center text-white text-center border-none bg-[#48587C] p-6 rounded-lg hover:bg-[#9747FF]'>
-            <img src={Auxinbot} alt='hero_img' />
-            <h2 className='font-bold my-3 text-lg'>Auxibot</h2>
-            <p className='font-light text-sm text-center w-[14rem]'>Auxibot is a automatic bot system that allow users to create a task and set reminder 
-            for a schedule program or event.it also function as a Ai system that where question between a 
-            user and the bot.it was made with react.js and figma. </p>
           </div>
-       </SwiperSlide>
-       
-
-       <SwiperSlide>
-       <div className='w-[16rem]  items-center justify-center text-white text-center border-none bg-[#48587C] p-6 rounded-lg hover:bg-[#9747FF]'>
-            <img src={Ezigbo} alt='hero_img' />
-            <h2 className='font-bold my-3 text-lg'>Ezigbo</h2>
-            <p className='font-light text-sm text-center w-[14rem]'>Ezigbo is a website that allow users check product condition and expiry date
-             it also save it to the blockchain cloud using smart contract for the backend.
-             it was made with react.js and figma. </p>
           </div>
-       </SwiperSlide>
-
-        <SwiperSlide>
-        <div className='w-[16rem]  items-center justify-center text-white text-center border-none bg-[#48587C] p-6 rounded-lg hover:bg-[#9747FF]'>
-            <img src={Certvault} alt='hero_img' />
-            <h2 className='font-bold my-3 text-lg'>Certvault</h2>
-            <p className='font-light text-sm text-center w-[14rem]'>Certvault is a website that allow sector to upload and send certificate in bulk and also save it to the block chain cloud using smart contract for the backend.it was made with react.js and figma. </p>
+    
+    
+          <div>
+          <div className='rounded-t-full bg-[#01b8af] md:absolute left-[35rem] bottom-[5rem] sm:flex hidden' >
+           <img src={IMG1} alt='hero_img' className=' w-[25rem]   ' />
           </div>
-       </SwiperSlide>
-
-       <SwiperSlide>
-       <div className='w-[16rem]  items-center justify-center text-white text-center border-none bg-[#48587C] p-6 rounded-lg hover:bg-[#9747FF]'>
-            <img src={design} alt='hero_img' />
-            <h2 className='font-bold my-3 text-lg'>Redesign</h2>
-            <p className='font-light text-sm text-center w-[14rem]'>Redesigned a company e-learning website  where user can come and book a class and enroll for a course program and make payment.it was made with react.js and figma. </p>
-          </div>
-       </SwiperSlide>
-
-      </Swiper>
-      </div>
-    </section>
-  )
+    
+         <div className='absolute bottom-0 sm:grid hidden'>
+          <p className='text-white'>Scroll </p>
+          <IoIosArrowRoundDown size='24' color='white' className='bg-[#12121220] rounded-2xl animate-bounce'/>
+         </div>
+          
+          </div> 
+        </div>
+        
+        </section>
+      )
 }
 
 export default Web

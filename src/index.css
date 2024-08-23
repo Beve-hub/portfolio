@@ -18,13 +18,11 @@ html{
 
 body{
   background-color: #2B3752;
-  overflow-x: hidden; 
-  overflow-y: hidden; 
+   
 }
 :root {
   --primary-color :#2B3959;
   --secondary-color :#ffffffff;
-
 }
 
 .active {

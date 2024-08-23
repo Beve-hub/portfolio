@@ -18,15 +18,15 @@ export const links = [
     {
         name: 'About',
         path: '/About'
-    },
-    
+    },  
     {
-        name: 'project',
-        path: '/project'
+        name: 'Project',
+        path: '/Project'
     },
+     
     {
-        name: 'Contact',
-        path: '/Contact'
+        name: 'Blog',
+        path: '/Blog'
     }
 ]
 

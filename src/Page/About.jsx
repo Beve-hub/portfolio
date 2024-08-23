@@ -11,37 +11,28 @@ import Php  from '../Images/photoshop.png'
 import illustrator  from '../Images/illustrator.png'
 import Native  from '../Images/native.png'
 import Nextjs  from '../Images/next js.png'
-import img  from '../Images/picture 2.png'
+import IMG1 from '../Images/profile image.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
-import {useNavigate} from 'react-router-dom'
 
 const About = () => {
   useEffect(() => {
     AOS.init({duration: 2000})
   }, []);
 
-  const navigate = useNavigate();
   return (
-    <section className="h-screen flex px-6 md:flex-row grid-col-2 items-center justify-center overflow-hidden">
+    <section className="h-screen flex px-6 md:flex-row grid-col-2 items-center">
       
-      <div  className='w-[1640px] flex mx-auto justify-around pb-[20rem] mt-[16rem]'>
-
-      <div  className='absolute top-10 right-20  items-center px-5 rounded-md sm:grid hidden' >                 
-        <div className="flex justify-between gap-2">
-        <IoIosArrowRoundBack onClick={() => navigate("/")} size='24' className='bg-[white] rounded-2xl'/>
-        <IoIosArrowRoundForward onClick={() => navigate("/Project")} size='24' className='bg-[white] rounded-2xl'/>
+      <div  className='w-[1640px] flex mx-auto justify-around  '>
+      <div className='rounded-t-full bg-[#01b8af] ' data-aos='zoom-in'>
+        <img src={IMG1} alt='' className='w-[25rem] rounded-t-full sm:flex hidden '/>
         </div>
-        </div>
-
-         <img src={img} alt='' className='w-[25rem] rounded-t-[1hb 5rem] sm:flex hidden '/>
+         
         <div>
         <div className='md:w-[40rem] text-white '>
         <h1 className=' font-bold text-2xl flex justify-center item-center mb-2'>About</h1>
         <p className='lg:w-[40rem] grid justify-center  font-sm mb-4 ml-'>I'm a full stack developer based in Nigeria with 4 years of experience in the development industry. My core 
-        strengths are Frontend development (React),(React Native), UI/UX(Figma), Graphics 
-        Design and illustration (Photoshop). if you' re not here for that, you'll
+        strengths are Frontend development (React),(Next.js),(React Native), UI/UX(Figma),(SuperBase). if you' re not here for that, you'll
          probably find me building projects and having fun on Twitter, or networking 
          badly on LinkedIn</p></div>
          <div className='md:grid gap-2 items-center justify-center mx-auto mb-6'>
