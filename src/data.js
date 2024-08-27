@@ -1,3 +1,4 @@
+
 import {AiOutlineTwitter} from 'react-icons/ai'
 import {AiOutlineBehance} from 'react-icons/ai'
 import {AiOutlineGithub} from 'react-icons/ai'
@@ -8,6 +9,17 @@ import { MdHomeFilled, MdPropaneTank, MdContacts, MdContactEmergency,  MdAddCall
 
 
 
+
+export const work = [
+    {
+        name: 'Devlopment',
+        path: '/Devlopment'
+    },
+    {
+        name: 'Graphics',
+        path: '/Graphics'
+    }
+]
 
 export const links = [
     {
@@ -25,8 +37,8 @@ export const links = [
     },
      
     {
-        name: 'Blog',
-        path: '/Blog'
+        name: 'Contact',
+        path: '/Contact'
     }
 ]
 

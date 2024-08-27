@@ -1,70 +1,63 @@
 import Certvault  from '../Images/project1.png'
 import room  from '../Images/project5.png'
-import design  from '../Images/project6.png'
-import vest  from '../Images/project3.png'
+import design  from '../Images/ged.png'
+import vest  from '../Images/master chef.png'
 import aviator  from '../Images/project4.png'
 import ves  from '../Images/afri-tune.png'
-import Kiko  from '../Images/project2.png'
 import Ezigbo from '../Images/ezigbo.jpg'
 import Auxinbot from '../Images/auxibolt.png'
-import nine from '../Images/nine.png'
 import Northern from '../Images/1.png'
-import Fless from '../Images/1.png'
-import domingo from '../Images/1.png'
+import Fless from '../Images/fless.png'
+import domingo from '../Images/domingo.png'
 import money  from '../Images/101.png'
 import BeveHealth  from '../Images/101.png'
 
 
-export  const data = [
-    { 
-        image: BeveHealth,
-        title: 'Beve Health',
-        description: 'Auxibot is a automatic bot system that allow users to create a task and set reminder for a schedule program or event.it also function as a Ai system that where question between a user and the bot.',
-        URL: 'www.getfless.com',          
-    },
+export  const data = [  
     { 
         image: Fless,
         title: 'Fless',
+        description: 'Fless is a financial institution that take control of your finances, with Fless Personal, your all-in-one money management app designed for effortless budgeting, seamless payments.',
+        URL: 'https://www.getfless.com/',          
+    },
+    { 
+        image: vest,
+        title: 'MasterChef',
         description: 'Auxibot is a automatic bot system that allow users to create a task and set reminder for a schedule program or event.it also function as a Ai system that where question between a user and the bot.',
-        URL: 'www.getfless.com',          
+        behanceURL: 'https://www.behance.net/gallery/196472193/masterchef-resturant',          
     },
     { 
         image: domingo,
         title: 'Domingo Real estate',
-        description: 'Auxibot is a automatic bot system that allow users to create a task and set reminder for a schedule program or event.it also function as a Ai system that where question between a user and the bot.',
-        URL: 'www.getfless.com',          
+        description: 'Domingo is a real estate website, assigned to me as an assessment to manage the api and also develop the user interface design.  .',
+        URL: 'https://domingotest.vercel.app/',          
     },
     { 
         image: money,
         title: '101 money maker',
-        description: 'Auxibot is a automatic bot system that allow users to create a task and set reminder for a schedule program or event.it also function as a Ai system that where question between a user and the bot.',
-        URL: 'www.getfless.com',          
+        description: '101 money maker is a web 3 finiance system that allow user store and invest in crypto currency, it is built with blockchain technology to manage it system.',
+        URL: 'https://making-money.vercel.app/',          
     },
     { 
         image: Auxinbot,
         title: 'Auxinbot',
         description: 'Auxibot is a automatic bot system that allow users to create a task and set reminder for a schedule program or event.it also function as a Ai system that where question between a user and the bot.',
-        behanceURL: 'https://www.behance.net/gallery/180894407/Ezigbo-(authentic)',
+        behanceURL: 'https://www.behance.net/gallery/206423891/auxibot',
         URL: 'https://auxi-bot.vercel.app/',          
     },
     { 
         image: Northern,
-        title: 'Domingo Real estate',
-        description: 'Auxibot is a automatic bot system that allow users to create a task and set reminder for a schedule program or event.it also function as a Ai system that where question between a user and the bot.',
-        URL: 'www.getfless.com',          
+        title: 'Northern Electric',
+        description: 'Northern Electric is a mobile application that is built to help, electric car owners to locate the nearest electric car charging station within his reach to avoid car break down .',
+        behanceURL: 'https://www.behance.net/gallery/184281407/Northern-Electric',          
     },
     { 
         image: ves,
-        title: 'Domingo Real estate',
-        description: 'Auxibot is a automatic bot system that allow users to create a task and set reminder for a schedule program or event.it also function as a Ai system that where question between a user and the bot.',
-        URL: 'www.getfless.com',          
+        title: 'Afri Tune',
+        description: 'Afri Tune is a africa language mobile app that help foreigner in africa learn it s local language for easy communication. it was built with react native',
+        behanceURL: 'https://www.behance.net/gallery/152582117/afri-tone',          
     },
-    { 
-        image: vest,
-        title: 'Domingo Real estate',
-        description: 'Auxibot is a automatic bot system that allow users to create a task and set reminder for a schedule program or event.it also function as a Ai system that where question between a user and the bot.',
-        URL: 'www.getfless.com',          
-    },
+    
     { 
         image: Ezigbo,
         title: 'Ezigbo',
@@ -74,45 +67,27 @@ export  const data = [
     },
     { 
         image: room,
-        title: 'Domingo Real estate',
-        description: 'Auxibot is a automatic bot system that allow users to create a task and set reminder for a schedule program or event.it also function as a Ai system that where question between a user and the bot.',
-        URL: 'www.getfless.com',          
-    },
-    { 
-        image: room,
-        title: 'Domingo Real estate',
-        description: 'Auxibot is a automatic bot system that allow users to create a task and set reminder for a schedule program or event.it also function as a Ai system that where question between a user and the bot.',
-        URL: 'www.getfless.com',          
-    },
+        title: 'Ideal Roommate',
+        description: 'Ideal Roommate is a real estate application that help occupant look for a perfect roommate to share the house and rent bills.',
+        behanceURL: 'https://www.behance.net/gallery/152290669/case-study-for-Ideal-Roommate-applake-house',          
+    },   
     { 
         image: Certvault,
         title: 'CertVault',
         description: 'A blockchain-based platform for securely storing and managing digital certificates also allow sector to upload and send certificate in bulk.',
         behanceURL: 'https://www.behance.net/gallery/172290425/Certvault-website',
         URL: 'https://github.com/Beve-hub/certvalut',          
-    },
-    { 
-        image: nine,
-        title: 'Domingo Real estate',
-        description: 'Auxibot is a automatic bot system that allow users to create a task and set reminder for a schedule program or event.it also function as a Ai system that where question between a user and the bot.',
-        URL: 'www.getfless.com',          
-    },
+    },    
     { 
         image: aviator,
-        title: 'Domingo Real estate',
-        description: 'Auxibot is a automatic bot system that allow users to create a task and set reminder for a schedule program or event.it also function as a Ai system that where question between a user and the bot.',
-        URL: 'www.getfless.com',          
-    },
-    { 
-        image: Kiko,
-        title: 'Domingo Real estate',
-        description: 'Auxibot is a automatic bot system that allow users to create a task and set reminder for a schedule program or event.it also function as a Ai system that where question between a user and the bot.',
-        URL: 'www.getfless.com',          
-    },
+        title: 'Aviator Tracker',
+        description: 'Aviator Tracker is a logistic application that helps cargo owners keep track of his/her cargo shipment making sure it get to his destination. ',
+        behanceURL: 'https://www.behance.net/gallery/155607287/aviation-tracker',          
+    },    
     { 
         image: design,
-        title: 'Domingo Real estate',
-        description: 'Auxibot is a automatic bot system that allow users to create a task and set reminder for a schedule program or event.it also function as a Ai system that where question between a user and the bot.',
-        URL: 'www.getfless.com',          
+        title: 'Grand Express Delivery',
+        description: 'Grand Express Delivery Service is a logistic webs site where users keep track of his goods and services sent within and outside geographic area .',
+        URL: 'https://geds-beta.vercel.app/',          
     },
 ] 

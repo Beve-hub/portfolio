@@ -23,8 +23,39 @@ body{
 :root {
   --primary-color :#2B3959;
   --secondary-color :#ffffffff;
+  --tetiary-color :#2b4359;
 }
 
 .active {
   @apply text-[--secondary-color] font-bold;
 }
+
+/* Add this to your CSS file or as a global style */
+@keyframes progress-bar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.progress-bar {
+  animation: progress-bar 2s ease-out;
+}
+
+.icon-appear {
+  animation: icon-appear 1s ease-out forwards;
+}
+
+@keyframes icon-appear {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+

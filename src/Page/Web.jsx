@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react'
 import { link } from './../data';
-import IMG1 from '../Images/profile image.png'
+import IMG1 from '../Images/anime.png'
 import CV from '../Images/okeke victor Updated.pdf'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import {  IoIosArrowRoundForward, IoIosArrowRoundDown } from "react-icons/io";
+import {  IoIosArrowRoundDown } from "react-icons/io";
 import {useNavigate} from 'react-router-dom'
 
 const Web = () => {
@@ -44,14 +44,10 @@ const Web = () => {
             </div>
            </div> 
     
-           <div className='md:flex bg-white w-[25rem] py-2 px-5 gap-4 rounded-md my-3' onClick={() => navigate("/Contact")}  data-aos='zoom-forward'>
+           <div className='md:flex bg-white w-[20rem] py-2 px-5 gap-4 rounded-md my-3' onClick={() => navigate("/Contact")}  data-aos='zoom-forward'>
             <p className='flex text-start text-sm '>Are you in need of Front-End Developer(Web/mobile App) & UI/UXDesigner
              </p>
             <div  className="flex justify-between ml-0">
-            <div className='flex justify-center items-center'>
-              Hire Me
-            <IoIosArrowRoundForward size='24' className='bg-[#12121220] rounded-2xl'/>
-            </div>
             
             </div>
             </div>
@@ -64,7 +60,7 @@ const Web = () => {
     
     
           <div>
-          <div className='rounded-t-full bg-[#01b8af] md:absolute left-[35rem] bottom-[5rem] sm:flex hidden' >
+          <div className='md:absolute left-[35rem] bottom-[5rem] sm:flex hidden' >
            <img src={IMG1} alt='hero_img' className=' w-[25rem]   ' />
           </div>
     

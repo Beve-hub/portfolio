@@ -1,64 +1,85 @@
-import React, {useEffect} from 'react'
-import Css  from '../Images/css.png'
-import Html  from '../Images/html 1.png'
-import Reacto  from '../Images/react 1.png'
-import Git  from '../Images/git 1.png'
-import Github  from '../Images/Github 1.png'
-import Javascript  from '../Images/js 1.png'
-import Figma  from '../Images/figma 1.png'
-import Tai  from '../Images/tailwindcss.png'
-import Php  from '../Images/photoshop.png'
-import illustrator  from '../Images/illustrator.png'
-import Native  from '../Images/native.png'
-import Nextjs  from '../Images/next js.png'
-import IMG1 from '../Images/profile image.png'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import React, { useEffect } from 'react';
+import IMG1 from '../Images/picture.png';
+import Fig from '../Images/figma 1.png';
+import Photoshop from '../Images/photoshop.png';
+import illustrate from '../Images/illustrator.png';
+import html from '../Images/html 1.png';
+import css from '../Images/css.png';
+import tailwind from '../Images/tailwindcss.png';
+import react from '../Images/react-svgrepo-com.svg';
+import mantine from '../Images/mantine-seeklogo.svg';
+import next from '../Images/next js.png';
+import native from '../Images/react-svgrepo-com (1).svg';
+import bootstrap from '../Images/bootstrap-seeklogo.svg';
+import redux from '../Images/preact-svgrepo-com.svg';
+import superbase from '../Images/super.svg';
+import fire from '../Images/firebase-seeklogo.svg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import ProgressBar from './ProgressBar';
+
+const skills = {
+  design: [
+    { icon: Fig },
+    { icon: Photoshop },
+    { icon: illustrate },
+  ],
+  frontend: [
+    { icon: html},
+    { icon: css},
+    { icon: bootstrap },
+    { icon: react },
+    { icon: native},    
+    { icon: next },
+    { icon: redux },
+    { icon: tailwind },
+    { icon: mantine}    
+  ],
+  backend: [
+    { icon: fire },
+    { icon: superbase },
+  ],
+};
 
 const About = () => {
   useEffect(() => {
-    AOS.init({duration: 2000})
+    AOS.init({ duration: 2000 });
   }, []);
 
   return (
-    <section className="h-screen flex px-6 md:flex-row grid-col-2 items-center">
-      
-      <div  className='w-[1640px] flex mx-auto justify-around  '>
-      <div className='rounded-t-full bg-[#01b8af] ' data-aos='zoom-in'>
-        <img src={IMG1} alt='' className='w-[25rem] rounded-t-full sm:flex hidden '/>
+    <section className="h-[50rem] bg-[--tetiary-color] flex flex-col md:flex-row items-center px-6 py-12">
+      <div className="flex flex-col md:flex-row md:w-full items-center justify-around md:space-x-4">
+        <div className='w-full md:w-1/2 flex justify-center'>
+          <div className='rounded-t-full bg-[#01b8af] sm:flex hidden' data-aos='zoom-in'>
+            <img src={IMG1} alt='Profile' className='w-full max-w-[25rem] rounded-t-full ' />
+          </div>
         </div>
-         
-        <div>
-        <div className='md:w-[40rem] text-white '>
-        <h1 className=' font-bold text-2xl flex justify-center item-center mb-2'>About</h1>
-        <p className='lg:w-[40rem] grid justify-center  font-sm mb-4 ml-'>I'm a full stack developer based in Nigeria with 4 years of experience in the development industry. My core 
-        strengths are Frontend development (React),(Next.js),(React Native), UI/UX(Figma),(SuperBase). if you' re not here for that, you'll
-         probably find me building projects and having fun on Twitter, or networking 
-         badly on LinkedIn</p></div>
-         <div className='md:grid gap-2 items-center justify-center mx-auto mb-6'>
-          <div className='flex gap-8 sm:grid-row-2 mx-[10px] pb-4'>
-            <img src={Html} alt='' className='w-[50px] h-[50px]'/>
-            <img src={Reacto} alt='' className='w-[50px] h-[50px]'/>
-            <img src={Css} alt='' className='w-[50px] h-[50px]'/>
-            <img src={Git} alt='' className='w-[50px] h-[50px]'/>
-            </div>
-            <div className='flex gap-8 sm:grid-row-2 mx-[10px] pb-4'>
-            <img src={Github} alt='' className='w-[50px] h-[50px] rounded-full'/>
-            <img src={Javascript} alt='' className='w-[50px] h-[50px]'/>
-            <img src={Nextjs} alt='' className='w-[50px] h-[50px] rounded-full'/>
-            <img src={Native} alt='' className='w-[50px] h-[50px] rounded-full'/>
-            </div>
-             <div className='flex gap-8 sm:grid-row-2 mx-[12px]'>
-            <img src={Php} alt='' className='w-[50px] h-[50px] rounded-full'/>
-            <img src={Tai} alt='' className='w-[50px] h-[50px]'/>
-            <img src={illustrator} alt='' className='w-[50px] h-[50px]'/>
-            <img src={Figma} alt='' className='w-[50px] h-[50px]'/>
-            </div>
-         </div>
-         </div>
-     </div>
+        <div className='w-full md:w-1/2 mt-6 md:mt-0'>
+          <div className='text-white px-4'>
+            <h1 className='font-bold text-2xl mb-2 text-center md:text-left'>About</h1>
+            <p className='text-md lg:w-[40rem] mb-4'> Hello! I'm a passionate Full Stack Developer from Nigeria with 4 years of experience crafting dynamic web and mobile applications. I specialize in Frontend technologies like React, Next.js, and React Native, and I’m skilled in UI/UX design with Figma. When I’m not coding or designing, you can catch me exploring new projects, sharing insights on Twitter, or making connections on LinkedIn. Let’s build something amazing together! </p>
+          </div>
+          <div className='px-4'>
+            <h2 className="text-lg font-bold mb-2 text-white ">Design Skills (80%)</h2>
+            <ProgressBar
+              percentage={80}
+              tools={skills.design.map(skill => skill.icon)}
+            />
+            <h2 className="text-lg font-bold mb-2 text-white ">Frontend Skills (50%)</h2>
+            <ProgressBar
+              percentage={50}
+              tools={skills.frontend.map(skill => skill.icon)}
+            />
+            <h2 className="text-lg font-bold mb-2 text-white ">Backend Skills (40%)</h2>
+            <ProgressBar              
+              percentage={40}
+              tools={skills.backend.map(skill => skill.icon)}
+            />
+          </div>
+        </div>
+      </div>
     </section>
-  )
+  );
 }
 
-export default About
+export default About;

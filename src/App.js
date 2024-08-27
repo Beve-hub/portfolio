@@ -6,6 +6,8 @@ import Blog from './Page/Blog';
 import Project from './Page/Project';
 import Contact from './Page/Contact';
 import Navbar from './component/Navbar';
+import Development from './Page/Development';
+import Graphics from './Page/Graphics';
 
 
 
@@ -20,6 +22,8 @@ function App() {
     <Route path='Project' element={<Project/>}/>
      <Route path='Blog' element={<Blog/>}/>
      <Route path='Contact' element={<Contact/>}/>
+     <Route path='Development' element={<Development/>}/>
+     <Route path='Graphics' element={<Graphics/>}/>
    </Routes>
    </BrowserRouter>
   );
