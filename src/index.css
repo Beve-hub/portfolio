@@ -17,13 +17,13 @@ html{
 }
 
 body{
-  background-color: #2B3752;
-   
+  background-color: var(--primary-color);
 }
 :root {
-  --primary-color :#2B3959;
-  --secondary-color :#ffffffff;
-  --tetiary-color :#2b4359;
+  --primary-color :#ffffffff;
+  --secondary-color : #142D8E;
+  --tetiary-color :#f0f0f8;
+  --gray-color :#353535;
 }
 
 .active {

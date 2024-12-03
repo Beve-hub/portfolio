@@ -26,20 +26,11 @@ export const links = [
         name: 'Home',
         path: '/'
     },
-
     {
-        name: 'About',
-        path: '/About'
-    },  
-    {
-        name: 'Project',
+        name: 'Explore Project',
         path: '/Project'
     },
-     
-    {
-        name: 'Contact',
-        path: '/Contact'
-    }
+    
 ]
 
 export const float = [

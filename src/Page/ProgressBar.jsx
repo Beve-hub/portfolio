@@ -18,15 +18,15 @@ const ProgressBar = ({ percentage, tools }) => {
   }, [percentage, progress]);
 
   return (
-    <div className="w-full max-w-md bg-gray-200 rounded-full h-6 mb-4 relative">
+    <div className="w-full max-w-md bg-gray-200 rounded-full h-4 mb-4 relative">
       <div
-        className={`bg-blue-600 h-6 rounded-full flex items-center justify-start pl-4 transition-all duration-1000`}
+        className={`bg-blue-600 h-4 rounded-full flex items-center justify-start pl-4 transition-all duration-1000`}
         style={{ width: `${progress}%` }}
       >
         {/* Optional: Add some text or a percentage label here if needed */}
       </div>
       {iconsVisible && (
-        <div className="absolute top-0 right-0 w-[10rem] h-6 flex justify-end px-2 mt-1">
+        <div className="absolute top-0 right-0 w-[8rem] h-6 flex justify-end px-2 mt-1">
           {tools.map((src, index) => (
             <img key={index} src={src} alt={`Skill ${index}`} className="h-4 w-4 ml-1" />
           ))}

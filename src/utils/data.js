@@ -10,7 +10,9 @@ import Northern from '../Images/1.png'
 import Fless from '../Images/fless.png'
 import domingo from '../Images/domingo.png'
 import money  from '../Images/101.png'
-import BeveHealth  from '../Images/101.png'
+import ego  from '../Images/ego.jpg'
+import wings  from '../Images/wings.jpg'
+import BeveHealth  from '../Images/BeveHealth.png'
 
 
 export  const data = [  
@@ -19,6 +21,25 @@ export  const data = [
         title: 'Fless',
         description: 'Fless is a financial institution that take control of your finances, with Fless Personal, your all-in-one money management app designed for effortless budgeting, seamless payments.',
         URL: 'https://www.getfless.com/',          
+    },
+    { 
+        image: ego,
+        title: 'Egoblox',
+        description: 'Egoblox is a telegram chatbot that mange your crypto currency, with Egoblox you can pay your utility bills using crypto and send/receive token using your telegram username.',
+        URL: 'http://t.me/egoblox_bot',          
+    },
+    { 
+        image: wings,
+        title: 'Wings',
+        description: 'Wings is telegram chatbot that allow you find and book best flight with ease, you can search for flight that tailored to your preference and also allow you pay with crypto using USDC and SOL.',
+        URL: 'http://t.me/wingsTravel_bot',          
+    },
+    
+    { 
+        image: BeveHealth,
+        title: 'BeveHealth',
+        description: 'BeveHealth is a hospital management app that allow users book appointment and help the hospital have full records, with BeveHealth can have a quick first aid treatment with AI chatbot.',
+        URL: 'https://beve-health-m86d.vercel.app/',          
     },
     { 
         image: vest,

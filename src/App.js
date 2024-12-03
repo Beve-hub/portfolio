@@ -15,7 +15,6 @@ function App() {
   return (
    <BrowserRouter>
       <Navbar/>
-      <Floatingnav/>
    <Routes>
     <Route index element={<Home/>} />
     <Route path='About' element={<About/>}/>
