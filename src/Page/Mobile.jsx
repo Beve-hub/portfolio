@@ -17,7 +17,7 @@ const Mobile = () => {
         >
           <div>
             <img src={item.image} alt="" className="w-[18rem] h-[12rem] object-cover" />
-            <h3 className="font-bold my-3 text-sm text-white">{item.title}</h3>
+            <h3 className="font-bold my-3 text-sm ">{item.title}</h3>
             <p className="w-[16rem] text-[#121212e6] text-xs">
               {item.description.slice(0, 150)}...
             </p>
