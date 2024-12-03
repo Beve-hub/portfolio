@@ -13,7 +13,7 @@ const Graphics = () => {
       {graphData.map((item, index) => (
         <div
           key={index}
-          className="relative bg-slate-500 rounded-lg p-2 md:hover:bg-[#9747FF] transition-all duration-300"
+          className="relative bg-[--tetiary-color] rounded-lg p-2 md:hover:bg-[#9747FF] transition-all duration-300"
         >
           <div className="relative">
             <img

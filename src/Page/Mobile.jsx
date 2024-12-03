@@ -13,7 +13,7 @@ const Mobile = () => {
       {data.map((item, index) => (
         <div
           key={index}
-          className="relative bg-slate-500 rounded-lg p-3 md:hover:bg-[#9747FF] transition-all duration-300"
+          className="relative bg-[--tetiary-color] rounded-lg p-3 md:hover:bg-[#9747FF] transition-all duration-300"
         >
           <div>
             <img src={item.image} alt="" className="w-[18rem] h-[12rem] object-cover" />
